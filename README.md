@@ -7,16 +7,19 @@ Script to test running whisper on different hardware/virtual machines, to get ac
 
 
 ``` d2
-Recording -> "transfer files" -> "sound to text parser"\
- -> "context triage"
- -> "context dispatch" -> "context handler (interface)"
- -> "context dispatch" -> "diary updater":{
-  a:md|
+Recording -> "transfer files" -> "sound to text parser" -> "context triage"
+"context triage" -> "context dispatch" -> "context handler (interface)"
+"context handler (interface)" -> "diary updater"
+
+"diary updater": {
+  # This creates a nested Markdown element
+  task_list: |md
     # Handle diary
-    - Agregate notes for one day
-    - Use som AI agent to summarize
-    - Post summary to  URL
- }
+    - Aggregate notes for one day
+    - Use some AI agent to summarize
+    - Post summary to URL
+  |
+}
 
 ```
 
