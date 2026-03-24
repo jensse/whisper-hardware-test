@@ -1,5 +1,10 @@
 # Speech to Text - test with whisper
 
+## Update
+New model trained by The Norwegian National Library, not tested yet, any ai up for the task.  
+- https://huggingface.co/NbAiLab/nb-whisper-large
+
+
 This utility validates Whisper performance across different hardware configurations. It measures transcription time for Norwegian audio on CPU versus GPU to evaluate efficiency.
 
 
